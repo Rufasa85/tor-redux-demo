@@ -1,13 +1,19 @@
-import { useState } from 'react'
+
 import First from './components/First'
 import "./App.css"
+import CountProvider from './utils/countContext'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <First/>
+      <CountProvider>
+       <First/>
+      </CountProvider>
+      <CountProvider>
+       <First/>
+      </CountProvider>
     </>
   )
 }

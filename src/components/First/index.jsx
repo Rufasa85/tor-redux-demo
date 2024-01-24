@@ -5,7 +5,7 @@ export default function First() {
   return (
     <div className='First'>
       <h1>First</h1>
-      <Second/>
+      <Second />
       </div>
   )
 }
